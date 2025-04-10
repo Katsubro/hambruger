@@ -3,27 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburger Menu</title>
+  <title>Responsive Hamburger Menu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <h1>My Website</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="menu" class="hidden">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hamburger Icon -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-
-  <!-- Navigation Menu -->
-  <nav id="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Main Content -->
+  <section class="content">
+    <h2>Welcome to My Website!</h2>
+    <p>This is an example of a responsive hamburger menu design. Resize your browser or open it on mobile to see how the menu adapts!</p>
+  </section>
 
   <script src="script.js"></script>
 </body>
